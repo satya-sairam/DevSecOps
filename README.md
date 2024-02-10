@@ -2,7 +2,7 @@
 
 ## install Jenkins in amazon linux 2 
 
- sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+* sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
 2) sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
@@ -19,3 +19,9 @@ sudo systemctl enable jenkins
 sudo systemctl start jenkins
 
 sudo systemctl status jenkins
+
+
+![Uploading Sairam photo (1).jpg…]()
+
+
+
