@@ -2,13 +2,13 @@
 
 ## install Jenkins in amazon linux 2 
 
-* sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+ sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
-sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+2) sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
-sudo yum install fontconfig
+3) sudo yum install fontconfig
 
-sudo dnf install java-17-amazon-corretto-devel
+4) sudo dnf install java-17-amazon-corretto-devel
 
 sudo yum install jenkins
 
