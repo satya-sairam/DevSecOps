@@ -5,7 +5,6 @@
 
 commands to install:
 ```
-### become root
 
 sudo su -
 sudo yum install git zsh -y 
