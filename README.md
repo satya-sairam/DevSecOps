@@ -30,4 +30,11 @@ sudo systemctl start jenkins
 sudo systemctl status jenkins
 
 ```
+### Jenkins checking browser
+```
+Add the 8080 port number in the instance security group
+http://ip:8080
+cat /var/lib/jenkins/secrets/initialAdminPassword
+
+```
 
