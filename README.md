@@ -21,7 +21,7 @@ sudo systemctl start jenkins
 sudo systemctl status jenkins
 
 
-![Uploading Sairam photo (1).jpg…]()
+ghj
 
 
 
