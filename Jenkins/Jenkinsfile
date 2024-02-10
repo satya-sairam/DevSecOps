@@ -4,7 +4,7 @@
 pipeline{
     agent any
     stages{
-        stage('first stage'){
+       /* stage('first stage'){
             steps{
                 sh '''
                     echo Hello from the first stage 
@@ -33,7 +33,7 @@ pipeline{
                 echHello()
             }
         }    
-        }
+        }*/
         stage('test from the worker-1'){
         agent { label 'JAVA' }
         steps{
