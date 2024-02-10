@@ -21,8 +21,6 @@ sudo systemctl start jenkins
 sudo systemctl status jenkins
 
 
-![Sairam photo (1)](https://github.com/satya-sairam/DevSecOps/assets/89373806/6e398e57-e3d1-4d4d-8c8c-34ccbf42ffc3)
-![Uploading Sairam photo (1).jpg…]()
 
 
 
