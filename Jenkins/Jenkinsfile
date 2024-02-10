@@ -24,7 +24,7 @@ pipeline{
             sh '''
                 echo test for webhook and PAT authentication
             '''
-        }
+        }}
 
 
         stage('test from the Share library'){
@@ -36,4 +36,4 @@ pipeline{
         }
     }
 }
-}
+
