@@ -8,12 +8,13 @@ pipeline{
                 '''
             }
         }
-           stage('second stage'){
-            steps{
-                sh '''
-                    echo Hello from the second stage 
-                '''
-            }
+        stage('second stage'){
+        steps{
+            sh '''
+                echo Hello from the second stage 
+            '''
+        }
+        }
 
             stage('Authentication test'){
             steps{
