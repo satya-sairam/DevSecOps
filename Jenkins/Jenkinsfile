@@ -2,7 +2,7 @@
 
 
 pipeline{
-    agent any
+    agent none
     stages{
        /* stage('first stage'){
             steps{
@@ -35,7 +35,8 @@ pipeline{
         }    
         }*/
         stage('test from the worker-1'){
-        agent { label 'JAVA' }
+  
+        agent { node { label 'JAVA' } }
         steps{
              sh '''
                 echo test from the worker-1
