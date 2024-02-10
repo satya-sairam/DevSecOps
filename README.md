@@ -2,6 +2,14 @@
 
 ## install Jenkins in amazon linux 2 
 
+
+Some basic Git commands are:
+```
+git status
+git add
+git commit
+```
+
 * sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
 2) sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
