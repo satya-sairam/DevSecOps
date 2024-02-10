@@ -7,6 +7,8 @@ commands to install:
 ```
 
 sudo su -
+```
+```
 sudo yum install git zsh -y 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -26,6 +28,13 @@ sudo systemctl daemon-reload
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
 sudo systemctl status jenkins
+
+```
+### checking Jenkins in browser
+```
+Add the 8080 port number in the instance security group
+http://ip:8080
+cat /var/lib/jenkins/secrets/initialAdminPassword
 
 ```
 
