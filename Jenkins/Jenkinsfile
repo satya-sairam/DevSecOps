@@ -30,7 +30,7 @@ pipeline{
         stage('test from the Share library'){
         steps{
             script{
-                echHello.groovy()
+                echHello()
             }
         }    
         }
