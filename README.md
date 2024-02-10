@@ -1,5 +1,18 @@
 # DevSecOps
 
+
+## install oh-my-zsh
+
+commands to install:
+```
+### become root
+
+sudo su -
+sudo yum install git zsh -y 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+```
+
 ## install Jenkins in amazon linux 2 
 
 
