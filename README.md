@@ -44,11 +44,14 @@ Here is a simple steps to trigger jenkins pipeline from github[^1].
 
 [^1]: Go to the repo settings and left side you can see the webhooks.
 
-![Screenshot 2024-02-10 193132](https://github.com/satya-sairam/DevSecOps/assets/89373806/0e168985-8512-49ff-8ab0-acc5cfc188d0)
+![Screenshot 2024-02-10 193132](https://github.com/satya-sairam/DevSecOps/assets/89373806/30687b52-ef2e-4793-83af-7d784beb6c78)
+
 
 
 
 [^2]: Add the Jenkins URL and append it with 
 ```
-http://jenkins-url:8080/github-webhook
+http://jenkins-url:8080/github-webhook/
+
+last slash(/) is required
 ```
