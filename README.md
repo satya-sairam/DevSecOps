@@ -51,4 +51,35 @@ Here is a simple steps to trigger jenkins pipeline from github[^1].
 [^2]: Add the Jenkins URL and append it with 
 ```
 http://jenkins-url:8080/github-webhook
+
 ```
+###  jenkins to github integration for private repo
+
+There are 2 ways to integrate jenkins with github[^1].
+
+1) Through ssh-key
+
+2) Through PAT
+
+
+[^1]: Through ssh-key:
+
+Login into the Jenkins server and do the ssh-keygen to generate pvt and public keys
+cat .ssh/rsa.pub --> take this file and place it in the github SSH keys sections
+cat .ssh/rsa -- > take this file and add it in jenkins manage credentials section with SSH and private key
+give the user name--> github username
+password ---> private key
+
+
+[^2]: Through PAT:
+
+Login into the Github account --> settings ---> developer options --> Personal Access token
+Generate new token, set the expiration time and give the required permissions to it.
+
+Go to manage credentials ---> add new credential ---> username and password 
+Give the github username and PAT 
+
+Now the jenkins will be able to talk to the git repo.
+
+
+
