@@ -28,7 +28,7 @@ pipeline{
          stage('k8s cli '){
         steps{
             sh '''
-                kubectl version --short
+                sudo kubectl version --short
             '''
         }}
 
