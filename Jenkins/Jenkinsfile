@@ -4,45 +4,37 @@
 pipeline{
     agent any
     stages{
-        stage('first stage'){
+        stage('git version'){
             steps{
                 sh '''
-                    echo Hello from the first stage 
+                    git version 
                 '''
             }
         }
         stage('second stage'){
         steps{
             sh '''
-                echo Hello from the second stage 
+                mvn -v 
             '''
         }
         }
 
-        stage('Authentication test'){
+        stage('docker'){
         steps{
             sh '''
-                echo test for webhook and PAT authentication
+                docker version
+            '''
+        }}
+         stage('k8s cli '){
+        steps{
+            sh '''
+                kubectl version --short
             '''
         }}
 
 
-        stage('test from the Share library'){
-        steps{
-            script{
-                echHello()
-            }
-        }    
-        }
-        stage('test from the worker-1'){
-  
-        agent { node { label 'JAVA' } }
-        steps{
-             sh '''
-                echo test from the worker-1
-            '''
-         
-        }    
+
+   
         }
     }
 }
