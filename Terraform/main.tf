@@ -1,6 +1,6 @@
 module "ec2" {
     source = "./ec2"
-    sg_id_ec2 = module.sg.sg_id_sg_module
+    sg_id_ec2 = "module.sg.sg_id_sg_module"
   
 }
 
