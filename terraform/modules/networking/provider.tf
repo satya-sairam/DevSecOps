@@ -5,8 +5,8 @@ provider "aws" {
 }
 
 
-terraform {
+# terraform {
 
-  backend "s3" {}
+#   backend "s3" {}
 
-}
+# }
