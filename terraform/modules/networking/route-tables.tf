@@ -36,7 +36,7 @@ resource "aws_route_table" "pvt_rt" {
 
 
 
-resource "aws_route_table_association" "pub_rt" {
+resource "aws_route_table_association" "pvt_rt" {
   subnet_id      = aws_subnet.pub_subnet.id
   route_table_id = aws_route_table.pvt_rt.id
 }
