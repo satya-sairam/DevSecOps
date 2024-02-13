@@ -30,7 +30,7 @@ resource "aws_route_table" "pvt_rt" {
   }
 
   tags = {
-    Name               = "${var.env}-pvt-igw"
+    Name               = "${var.env}-pvt-rt"
   }
 }
 
