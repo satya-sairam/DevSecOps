@@ -10,8 +10,3 @@ module "newtworking" {
 }
 
 
-terraform {
-
-  backend "s3" {}
-
-}
