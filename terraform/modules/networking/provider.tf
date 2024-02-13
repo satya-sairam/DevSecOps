@@ -1,12 +1,12 @@
 
 
-# provider "aws" {
-#   region = var.region
-# }
+provider "aws" {
+  region = var.region
+}
 
 
-# terraform {
+terraform {
 
-#   backend "s3" {}
+  backend "s3" {}
 
-# }
+}
