@@ -7,7 +7,7 @@ resource "aws_route_table" "pub_rt" {
   }
 
   tags = {
-    Name               = "${var.env}-igw"
+    Name               = "${var.env}-pub-rt"
   }
 }
 
@@ -30,7 +30,7 @@ resource "aws_route_table" "pvt_rt" {
   }
 
   tags = {
-    Name               = "${var.env}-igw"
+    Name               = "${var.env}-pvt-igw"
   }
 }
 
