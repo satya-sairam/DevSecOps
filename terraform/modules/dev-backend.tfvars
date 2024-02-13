@@ -1,5 +1,5 @@
 
     bucket = "my-terrraform-s3"
-    key    = "${var.env}/terraform.tfstate"
+    key    = "dev/terraform.tfstate"
     region = var.region
 
