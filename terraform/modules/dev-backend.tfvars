@@ -1,5 +1,5 @@
 
     bucket = "my-terrraform-s3"
     key    = "dev/terraform.tfstate"
-    region = var.region
+    region = "us-east-1"
 
