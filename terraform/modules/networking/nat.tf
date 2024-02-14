@@ -5,7 +5,7 @@ resource "aws_nat_gateway" "ngw" {
   tags = {
     Name                = "${var.env}-ngw"
   }
-  depends_on            = [aws_internet_gateway.igw]
+  depends_on            = [aws_internet_gateway.igw, aws_subnet.pub_subnet]
 }
 
 
