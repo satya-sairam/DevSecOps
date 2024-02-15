@@ -10,6 +10,7 @@ pipeline {
                     sh '''
                         trivy --version
                         trivy image -f json -o results.json --vuln-type os --severity HIGH,CRITICAL centos:7
+                        cat results.json
                        
 
                     
