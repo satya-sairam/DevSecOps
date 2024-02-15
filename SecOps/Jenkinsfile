@@ -13,15 +13,15 @@ pipeline {
       stage('test and jacoco report') {
             steps {
               sh '''
-              
+              cd SecOps
               mvn test'''
               
             }
-post{
-always{
-junit 'target/surefire-reports/*.xml'
-jacoco execPattern: 'target/jacoco.exec'
-}}
+            post{
+              always{
+               junit 'target/surefire-reports/*.xml'
+              jacoco execPattern: 'target/jacoco.exec'
+            }}
         }
     }
 
