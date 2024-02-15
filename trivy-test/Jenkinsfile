@@ -9,7 +9,7 @@ pipeline {
                     // Install Trivy
                     sh '''
                         trivy --version
-                        trivy image --severity HIGH,CRITICAL nginx:1.24.0-alpine
+                        trivy image --severity HIGH,CRITICAL nginx:1.24-alpine-slim
                        
 
                     
