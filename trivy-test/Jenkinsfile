@@ -7,14 +7,15 @@ pipeline {
             steps {
                 script {
                     // Install Trivy
-                    sh 'sudo su - root'
-                    sh 'wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -'
-                    sh 'echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list'
-                    sh 'sudo apt-get update && sudo apt-get install trivy'
+                    sh '''
+                        docker run -d aquasec/trivy:0.18.3
+                        trivy image --severity HIGH,CRITICAL nginx:1.24.0-alpine
+                        trivy --version
+
+
                     
-                    // Scan Docker image with Trivy
-                    sh 'trivy image --severity HIGH,CRITICAL nginx:1.24.0-alpine'
-                    sh 'trivy --version'
+                    '''
+
                 }
             }
         }
