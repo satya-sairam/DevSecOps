@@ -8,7 +8,7 @@ pipeline {
                 script {
                     // Install Trivy
                     sh '''
-                        docker run -d aquasec/trivy:0.18.3
+                        sudo docker run -d aquasec/trivy:0.18.3
                         trivy image --severity HIGH,CRITICAL nginx:1.24.0-alpine
                         trivy --version
 
