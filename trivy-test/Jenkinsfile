@@ -9,7 +9,7 @@ pipeline {
                     // Install Trivy
                     sh '''
                         trivy --version
-                        trivy image -f json -0 results.json --vuln-type os --severity HIGH,CRITICAL centos:7
+                        trivy image -f json -o results.json --vuln-type os --severity HIGH,CRITICAL centos:7
                        
 
                     
