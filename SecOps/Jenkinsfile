@@ -4,9 +4,9 @@ pipeline {
   stages {
       stage('Build Artifact') {
             steps {
-              sh "
+              sh '''
               cd SecOps
-              mvn clean package -DskipTests=true"
+              mvn clean package -DskipTests=true '''
               
             }
         }   
