@@ -27,8 +27,8 @@ output "pub_subnet_id" {
 }
 
 
-terraform {
+# terraform {
 
-  backend "s3" {}
+#   backend "s3" {}
 
-}
+# }
