@@ -7,15 +7,15 @@ module "vpc" {
   
 }
 
-module "subnet" {
-    source = "./subnets"
-    region = var.region
-    env = var.env
-    pub_subnet_cidr = var.pub_subnet_cidr
-    pvt_subnet_cidr = var.pvt_subnet_cidr
+# module "subnet" {
+#     source = "./subnets"
+#     region = var.region
+#     env = var.env
+#     pub_subnet_cidr = var.pub_subnet_cidr
+#     pvt_subnet_cidr = var.pvt_subnet_cidr
     
   
-}
+# }
 
 terraform {
 
