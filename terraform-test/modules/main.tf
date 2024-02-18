@@ -13,7 +13,7 @@ module "subnet" {
     env = var.env
     pub_subnet_cidr = var.pub_subnet_cidr
     pvt_subnet_cidr = var.pvt_subnet_cidr
-    depends_on = [ module.vpc ]
+
     
   
 }
