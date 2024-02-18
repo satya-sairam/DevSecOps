@@ -14,7 +14,9 @@ module "subnet" {
     pub_subnet_cidr = var.pub_subnet_cidr
     pvt_subnet_cidr = var.pvt_subnet_cidr
 
-    
+      
+
+      
   
 }
 
