@@ -1,4 +1,4 @@
-data "terraform_remote_state" "remote" {
+data "terraform_remote_state" "new" {
   backend = "s3"
 
   config = {
