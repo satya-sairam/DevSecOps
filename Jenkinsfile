@@ -16,6 +16,12 @@ pipeline{
                 mvn -v 
             '''
         }
+            stage('third stage'){
+        steps{
+            sh '''
+                echo Third stage
+            '''
+        }
      
 
 
