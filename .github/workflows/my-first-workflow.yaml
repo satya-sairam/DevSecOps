@@ -32,7 +32,7 @@ jobs:
             path: test.txt
   
         - name: workflow-level-environment-var-test
-          uses: actions/upload-artifact@v4
+          uses: actions/download-artifact@v4
           with:
             name: test-artifact
 
