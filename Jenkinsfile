@@ -13,7 +13,7 @@ pipeline{
         stage('second stage'){
         steps{
             sh '''
-                mvn -v 
+                printenv 
             '''
         }
      

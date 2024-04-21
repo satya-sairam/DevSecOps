@@ -1,0 +1,47 @@
+name: My first workflow test
+
+on: [push]
+
+env:
+    MONTH: November
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo-test
+        run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+
+  Environment-variables-check:
+    needs: Explore-GitHub-Actions
+    runs-on: ubuntu-latest
+    env:
+        SEASON: winter
+    steps:
+        - name: step-level-environment-var-test
+          env:
+            DAY_OF_WEEK: Monday
+          run: |
+            printenv
+            ls -ltr
+            echo $DAY_OF_WEEK    
+            echo $SEASON
+            echo "hello world" >> test.txt
+        - uses: actions/upload-artifact@v4
+          with:
+            name: test-artifact
+            path: test.txt
+  
+        - name: workflow-level-environment-var-test
+          uses: actions/download-artifact@v4
+          with:
+            name: test-artifact
+
+        - name: artifact-test
+          run: |
+            echo $MONTH
+            cat test.txt
+
+
+        - name: Job-level-environment-var-test
+          run: |
+            echo $SEASON
